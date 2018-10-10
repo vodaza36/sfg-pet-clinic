@@ -1,11 +1,11 @@
 package at.hochbichler.sfgpetclinic.services.map;
 
 import at.hochbichler.sfgpetclinic.model.Pet;
-import at.hochbichler.sfgpetclinic.services.CrudService;
+import at.hochbichler.sfgpetclinic.services.PetService;
 
 import java.util.Set;
 
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
     @Override
     public Set<Pet> findAll() {
         return super.findAll();
